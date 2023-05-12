@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: Arial, sans-serif;
+}
+
+.basket {
+    /* margin-right: -px; */
+    display: inline-block;
+    position: relative;
+    width:100px;
+}
+
+.basketContent{
+    font-size:30px;;
+    display: inline-block;
+    width: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foodList{
+    display: grid;
+    list-style: none;
+    position: absolute;
+    z-index: 2;
+    grid-template-columns: 1fr 1fr;
+}
+
+#store{
+    width: 200px;
+    border: solid;
+    text-align: center;
+    grid-column: 2 / 2;
+    grid-row: 1 /span 2;
+}
+
+#activityArea{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 600px;
+    row-gap: 50px;
+}

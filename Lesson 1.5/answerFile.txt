@@ -1,0 +1,17 @@
+
+const foods = document.querySelector('.foodList').children;
+
+
+
+Array.from(foods).forEach(food => {food.addEventListener("click", ()=>{
+    console.log(food.parentElement.className)
+    if(food.parentElement.id === 'store'){
+        const basket  = document.querySelector('.foodList');
+        basket.appendChild(food);
+        
+    } else{
+        const store = document.querySelector('#store');
+        store.appendChild(food)
+    }
+ 
+})})
